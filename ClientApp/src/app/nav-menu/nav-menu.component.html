@@ -27,8 +27,9 @@
           >
             <a class="nav-link active" [routerLink]="['/']">Магазин</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link" (click)='clickToCart()'
+          <li class="nav-item" 
+          [routerLinkActive]="['link-active']">
+            <a class="nav-link" [routerLink]="['/cart']"
               >Корзина</a
             >
           </li>
@@ -37,4 +38,4 @@
     </div>
   </nav>
 </header>
-<!-- [routerLink]="['/counter']" -->
+<!-- (click)='clickToCart()' -->
